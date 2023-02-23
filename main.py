@@ -1,16 +1,5 @@
-def large_power(base: int, exponent: int):
-    result = 1
-    for x in range(exponent):
-        result = result * base
-
-    print(result)
-    if result > 5000:
+def not_sum_to_ten(num1, num2):
+    if num1 + num2 != 10:
         return True
     else:
         return False
-
-
-# returns false
-print(large_power(2, 12))
-# returns true
-print(large_power(2, 13))
